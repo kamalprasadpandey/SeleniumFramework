@@ -32,12 +32,13 @@ public class MyFirstClass {
 		cf.launchApplication();
 		cf.myWait(30);
 		Thread.sleep(10000);
-		WebElement ele =driver.findElement(By.xpath("//body[1]/div[1]/div[3]/form[1]/div[1]/div[1]/div[3]/center[1]/input[1]"));
+		//WebElement ele =driver.findElement(By.xpath("//body[1]/div[1]/div[3]/form[1]/div[1]/div[1]/div[3]/center[1]/input[1]"));
 		 //Call the highlighterMethod and pass webdriver and WebElement which you want to highlight as arguments.
 		//HighlightObject ho= new HighlightObject(driver);
 		//ho.highLighterMethod(driver,ele);
+		WebElement ele =driver.findElement(By.xpath("//body[1]/div[1]/div[3]/form[1]/div[1]/div[1]/div[3]/center[1]/input[1]"));
 		cf.highLighterMethod(driver, ele); //Call the highlighterMethod and pass webdriver and WebElement which you want to highlight as arguments.
-		
+		 
 	}
 	
 	
